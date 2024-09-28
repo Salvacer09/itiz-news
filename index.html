@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Últimas noticias sobre tecnología en ITIZ NEWS">
+  <title>ITIZ NEWS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v20.0" nonce="GSdSodaf"></script>
+
+    <header>
+      <div class="header-content">
+        <h1>ITIZ NEWS</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#plantel">Plantel</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#subscribe">Suscríbete</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Bienvenidos a ITIZ NEWS</h2>
+        <p class="welcome-text">Bienvenidos al sitio web de noticias del Instituto Tecnológico de Iztapalapa, donde la excelencia y la innovación son fundamentales. Aquí, nos dedicamos a mantener a nuestra comunidad informada sobre eventos, logros y avances importantes. Explora nuestro sitio para conocer lo último de nuestra institución y únete a esta vibrante comunidad.</p>
+      </section>
+
+      <section id="news">
+        <h2>Últimas Noticias</h2>
+
+        <!-- Noticias para Ingeniería en Sistemas Computacionales -->
+        <div id="news-sistemas" class="news-panel">
+          <h3>Ingeniería en Sistemas Computacionales</h3>
+          <div id="news-sistemas-container" class="news-container"></div>
+        </div>
+
+        <!-- Noticias para Ingeniería Mecatrónica -->
+        <div id="news-mecatronica" class="news-panel">
+          <h3>Ingeniería Mecatrónica</h3>
+          <div id="news-mecatronica-container" class="news-container"></div>
+        </div>
+
+        <!-- Noticias para Ingeniería en Gestión Empresarial -->
+        <div id="news-gestion" class="news-panel">
+          <h3>Ingeniería en Gestión Empresarial</h3>
+          <div id="news-gestion-container" class="news-container"></div>
+        </div>
+
+        <!-- Noticias para Ingeniería Industrial -->
+        <div id="news-industrial" class="news-panel">
+          <h3>Ingeniería Industrial</h3>
+          <div id="news-industrial-container" class="news-container"></div>
+        </div>
+      </section>
+
+      <section id="events">
+        <h2>Eventos</h2>
+        <p>Próximos eventos y conferencias.</p>
+        <div class="event-container">
+          <div class="event-item">
+            <img src="evento1.jpg" alt="Evento 1" class="event-image">
+            <p class="event-description">Por motivos de asistencia, se dará una semana más para la realización de la reunión de egresados...</p>
+          </div>
+          <div class="event-item">
+            <img src="evento2.jpg" alt="Evento 2" class="event-image">
+            <p class="event-description">Como parte de las actividades para fortalecer las expresiones de nuestra cultura...</p>
+          </div>
+          <div class="event-item">
+            <img src="evento3.jpg" alt="Evento 3" class="event-image">
+            <p class="event-description">El Instituto Tecnológico de Iztapalapa invita a estudiantes, docentes...</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="plantel">
+        <h2>Plantel</h2>
+        <p>Últimas publicaciones de nuestro Facebook.</p>
+        <div class="fb-page" 
+             data-href="https://www.facebook.com/TecnmIztapalapa1/" 
+             data-tabs="timeline" 
+             data-width="450" 
+             data-height="800" 
+             data-small-header="true" 
+             data-adapt-container-width="true" 
+             data-hide-cover="true" 
+             data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/TecnmIztapalapa1/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/TecnmIztapalapa1/">Instituto Tecnológico de Iztapalapa</a>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+          <div class="address">
+            <h3>Dónde estamos</h3>
+            <p>Instituto Tecnológico de Iztapalapa<br>
+            Av. Telecomunicaciones S/N,<br>
+            Col. Chinampac de Juárez,<br>
+            Código Postal: 09208<br>
+            Alcaldía de Iztapalapa,<br>
+            Ciudad de México.</p>
+          </div>
+          <a href="https://maps.app.goo.gl/QqC8jXGcantSFZfZ9" target="_blank" class="map-icon">
+            <img src="imagenes/map-icon.png" alt="Mapa" width="40" height="40">
+          </a>        
+        </div>
+        <div class="social-media">
+          <a href="https://www.whatsapp.com/channel/0029VaiLNWf6RGJGlMpC6O36" target="_blank" class="social-icon">
+            <img src="imagenes/whatsapp-icon.png" alt="WhatsApp" width="40" height="40">
+          </a>
+          <a href="https://www.facebook.com/TecnmIztapalapa1" target="_blank" class="social-icon">
+            <img src="imagenes/Facebook-icon.png" alt="Facebook" width="40" height="40">
+          </a>
+          <a href="https://www.instagram.com/axopunkmx/" target="_blank" class="social-icon">
+            <img src="imagenes/instagram-icon.png" alt="Instagram" width="40" height="40">
+          </a>
+        </div>
+      </section>
+
+      <section id="subscribe">
+        <div id="download-panel" class="download-panel">
+          <p>Descarga aquí un manual de uso:</p>
+          <a href="manual.pdf" class="download-button" download>Descargar Manual</a>
+        </div>
+        <h2>Suscríbete</h2>
+        <p>Rellena el siguiente formulario para recibir nuestras actualizaciones:</p>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Noticias Tech. Todos los derechos reservados.</p>
+    </footer>
+
+ <!-- Chatbot -->
+    <button id="open-chat" class="chat-toggle">Chat</button>
+
+    <div id="chatbot" class="chatbox" style="display: none;">
+      <div class="chat-header">
+        <h4>Chatbot</h4>
+        <button id="close-chat">X</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+
+    <!-- Enlace a los archivos JavaScript -->
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script> <!-- Enlace al nuevo archivo de chatbot -->
+
+
+</body>
+</html>

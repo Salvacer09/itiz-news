@@ -1,0 +1,440 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 15px; /* Reducido el padding para hacer el encabezado más delgado */
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra para mejor separación visual */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em; /* Reduce el tamaño del texto para ajustar el diseño */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 5px; /* Reducido el margen para evitar el solapamiento */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 10px; /* Añade padding para mejorar la separación */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+main {
+  margin-top: 80px; /* Ajusta según la altura del header */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Paneles */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Noticias */
+#news {
+  margin-top: 20px;
+}
+
+.news-panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Espacio entre los paneles */
+  padding: 20px;
+}
+
+.news-panel h3 {
+  color: #004080;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Contenedor de tarjetas */
+.news-container {
+  display: flex;
+  flex-wrap: wrap; /* Las tarjetas se ajustan en varias filas */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+.news-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px; /* Tamaño máximo de las tarjetas */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 15px;
+}
+
+.news-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.news-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.news-card a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .news-container {
+    flex-direction: column;
+  }
+
+  .news-card {
+    width: 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+  }
+
+  header {
+    padding: 10px; /* Ajustar el padding para pantallas pequeñas */
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+
+/* Texto de bienvenida */
+.welcome-text {
+  font-size: 1.6em; /* Tamaño aumentado para el texto de bienvenida */
+  line-height: 1.5; /* Mejora la legibilidad */
+  margin-top: 10px; /* Añade un margen superior para separar del título */
+}
+
+/* Sección de contacto */
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Centra el texto */
+  flex-direction: column; /* Cambia la dirección del flex para mejor alineación */
+}
+
+.contact-info h2 {
+  font-size: 2.5em; /* Tamaño aumentado para "Dónde estamos" */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.address {
+  font-size: 1.5em; /* Tamaño aumentado para la dirección */
+  margin-bottom: 20px; /* Espacio entre la dirección y el icono del mapa */
+}
+
+.map-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el icono del mapa horizontalmente */
+}
+
+.map-icon img {
+  width: 150px; /* Aumenta el tamaño del icono del mapa */
+  height: auto;
+}
+
+.social-media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 15px; /* Aumenta el margen para separar más los íconos */
+}
+
+.social-icon img {
+  width: 50px; /* Aumenta el tamaño de los íconos de redes sociales */
+  height: auto;
+}
+
+/* Nueva sección de suscripción */
+#subscribe {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#subscribe form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#subscribe label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#subscribe input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#subscribe button {
+  padding: 10px;
+  background-color: #004080;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#subscribe button:hover {
+  background-color: #003366;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas más pequeñas */
+  }
+
+  header {
+    padding: 10px; /* Ajustar el padding para pantallas pequeñas */
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Pie de página */
+footer {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 20px;
+}
+
+.chatbox {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.chat-footer {
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#user-input {
+  flex: 1;
+  padding: 5px;
+}
+
+#send-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bot-message, .user-message {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+/* Estilo general para íconos minimalistas */
+.social-media {
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  gap: 20px; /* Espacio entre los íconos */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.social-icon svg, .map-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: black; /* Color negro por defecto */
+  stroke: black; /* Línea exterior negra */
+  transition: fill 0.3s, stroke 0.3s, transform 0.3s; /* Transiciones suaves al interactuar */
+}
+
+.social-icon svg:hover, .map-icon svg:hover {
+  fill: white; /* Cambia el relleno a blanco al pasar el cursor */
+  stroke: black; /* Mantiene el borde negro */
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+.download-panel {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px; /* Espaciado entre el panel de descarga y el de suscripción */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
+  gap: 20px; /* Añade espacio entre los elementos */
+}
+
+.event-item {
+  flex: 1 1 300px; /* Ajusta el tamaño mínimo de los eventos a 300px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.event-image {
+  max-width: 100%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
