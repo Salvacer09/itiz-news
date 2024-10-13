@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Últimas noticias sobre tecnología en ITIZ NEWS">
   <title>ITIZ NEWS</title>
+<<<<<<< HEAD
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -168,6 +169,185 @@
     <script src="script.js"></script>
     <script src="chatbot.js"></script> <!-- Enlace al nuevo archivo de chatbot -->
 
+=======
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>ITIZ NEWS</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#news" class="dropdown-toggle">Noticias</a>
+            <ul class="dropdown-menu">
+              <li><a href="#news-sistemas">Ingeniería en Sistemas Computacionales</a></li>
+              <li><a href="#news-mecatronica">Ingeniería Mecatrónica</a></li>
+              <li><a href="#news-gestion">Ingeniería en Gestión Empresarial</a></li>
+              <li><a href="#news-industrial">Ingeniería Industrial</a></li>
+            </ul>
+          </li>
+          <li><a href="#events">Eventos</a></li>
+          <li><a href="#plantel">Plantel</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#subscribe">Suscríbete</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+  <section id="home">
+  <div class="home-content">
+    <h2>Bienvenidos a ITIZ NEWS</h2>
+    <p class="welcome-text">Bienvenidos al sitio web de noticias del Instituto Tecnológico de Iztapalapa, donde la excelencia y la innovación son fundamentales. Aquí, nos dedicamos a mantener a nuestra comunidad informada sobre eventos, logros y avances importantes. Explora nuestro sitio para conocer lo último de nuestra institución y únete a esta vibrante comunidad.</p>
+  </div>
+</section>
+
+    <!-- Noticias -->
+<section id="news">
+  <h2>Últimas Noticias</h2>
+
+  <!-- Noticias  Sistemas -->
+  <div id="news-sistemas" class="news-panel">
+    <h3>Ingeniería en Sistemas Computacionales</h3>
+    <div id="news-sistemas-container" class="news-container">
+      <rssapp-wall id="waen5AgIBjvmptSG"></rssapp-wall>
+      <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+    </div>
+  </div>
+
+  <!-- Noticias  Meca -->
+  <div id="news-mecatronica" class="news-panel">
+    <h3>Ingeniería Mecatrónica</h3>
+    <div id="news-mecatronica-container" class="news-container">
+      <rssapp-wall id="kdTc2OKGWuzOCYIt"></rssapp-wall>
+      <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+    </div>
+  </div>
+
+  <!-- Noticias Gestion -->
+  <div id="news-gestion" class="news-panel">
+    <h3>Ingeniería en Gestión Empresarial</h3>
+    <div id="news-gestion-container" class="news-container">
+      <rssapp-wall id="gfoEYJE0gNQRkdST"></rssapp-wall>
+      <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+    </div>
+  </div>
+
+  <!-- Noticias Industrial -->
+  <div id="news-industrial" class="news-panel">
+    <h3>Ingeniería Industrial</h3>
+    <div id="news-industrial-container" class="news-container">
+      <rssapp-wall id="A7wr91R7eHyZyX0F"></rssapp-wall>
+      <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+    </div>
+  </div>
+</section>
+
+
+   
+  <!-- Eventos -->
+  <section id="events" class="panel">
+    <h2>Eventos</h2>
+    <div class="event-container">
+      <div class="event-item">
+        <img src="imagenes/evento1.jpg" alt="Evento 1" class="event-image">
+        <p>Por motivos de asistencia, se dará una semana más para la realización de la reunión de egresados...</p>
+      </div>
+      <div class="event-item">
+        <img src="imagenes/evento2.jpg" alt="Evento 2" class="event-image">
+        <p>Como parte de las actividades para fortalecer las expresiones de nuestra cultura...</p>
+      </div>
+      <div class="event-item">
+        <img src="imagenes/evento3.jpg" alt="Evento 3" class="event-image">
+        <p>El Instituto Tecnológico de Iztapalapa invita a estudiantes, docentes...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plantel -->
+  <section id="plantel" class="panel">
+    <h2>Plantel</h2>
+    <rssapp-imageboard id="qVEYmJGknf0CbHM3"></rssapp-imageboard>
+    <script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="panel">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <div class="address">
+        <h3>Dónde estamos</h3>
+        <p>Instituto Tecnológico de Iztapalapa<br>
+          Av. Telecomunicaciones S/N,<br>
+          Col. Chinampac de Juárez,<br>
+          Código Postal: 09208<br>
+          Alcaldía de Iztapalapa,<br>
+          Ciudad de México.</p>
+      </div>
+      <a href="https://maps.app.goo.gl/QqC8jXGcantSFZfZ9" target="_blank" class="map-icon">
+        <img src="imagenes/map-icon.png" alt="Mapa" width="40" height="40">
+      </a>
+    </div>
+    <div class="social-media">
+      <a href="https://www.whatsapp.com/channel/0029VaiLNWf6RGJGlMpC6O36" target="_blank" class="social-icon">
+        <img src="imagenes/whatsapp-icon.png" alt="WhatsApp" width="40" height="40">
+      </a>
+      <a href="https://www.facebook.com/TecnmIztapalapa1" target="_blank" class="social-icon">
+        <img src="imagenes/facebook-icon.png" alt="Facebook" width="40" height="40">
+      </a>
+      <a href="https://www.instagram.com/axopunkmx/" target="_blank" class="social-icon">
+        <img src="imagenes/instagram-icon.png" alt="Instagram" width="40" height="40">
+      </a>
+    </div>
+  </section>
+
+  <!-- Suscrib -->
+  <section id="subscribe" class="panel">
+    <div id="download-panel" class="download-panel">
+      <p>Descarga aquí un manual de uso:</p>
+      <a href="manual.pdf" class="download-button" download>Descargar Manual</a>
+    </div>
+    <h2>Suscríbete</h2>
+    <form action="#" method="post">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+</main>
+
+  <footer>
+  <p>&copy; 2024 Noticias Tech. Todos los derechos reservados.</p>
+</footer>
+
+
+  <!-- Chatbot -->
+  <button id="open-chat" class="chat-toggle">Chat</button>
+  <div id="chatbot" class="chatbox" style="display: none;">
+    <div class="chat-header">
+      <h4>Chatbot</h4>
+      <button id="close-chat">X</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/chatbot.js"></script>
+>>>>>>> 318a2e2 (Version 4.0 codigo limpio y integracion de RSS)
 
 </body>
 </html>
